@@ -17,14 +17,7 @@ const App = () => {
   return (
     <div>
       <h1>API Data</h1>
-      <ul>
-        {data &&
-          data.map((item) => (
-            <li key={item.id}>
-              {item.name}
-            </li>
-          ))}
-      </ul>
+      <ul>{data && data.map((item) => <li key={item.id}>{item.name}</li>)}</ul>
     </div>
   );
 };
